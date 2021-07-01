@@ -111,6 +111,11 @@ void Board::reset()
   mobility_ = mobility();
 }
 
+string Board::get_record()
+{
+  return record_;
+}
+
 string Board::to_ASCII_art()
 {
   string ascii = "  a b c d e f g h";
