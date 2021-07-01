@@ -14,6 +14,7 @@ class Board
     unsigned long long black_;
     unsigned long long white_;
     int turn_;
+    string record_;
     unsigned long long mobility_;
     void change_turn_();
   public:

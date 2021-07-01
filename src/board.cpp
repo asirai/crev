@@ -11,6 +11,7 @@ Board::Board()
   black_ = 0x0000000810000000;
   white_ = 0x0000001008000000;
   turn_ = 1;
+  record_ = "";
   is_black_turn = 1;
   is_white_turn = 0;
   mobility_ = mobility();
@@ -69,6 +70,7 @@ void Board::play(int x)
   *pptr ^= rev | m;
   *optr ^= rev;
 
+  record_ += move_to_str(x);
   change_turn_();
 }
 
