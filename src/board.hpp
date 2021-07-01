@@ -24,6 +24,7 @@ class Board
     unsigned long long mobility();
     void play(int x);
     bool is_over();
+    void reset();
     string to_ASCII_art();
     string move_to_str(int x);
     int move_from_str(string pos);

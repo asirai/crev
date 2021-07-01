@@ -100,6 +100,17 @@ bool Board::is_over()
   return true;
 }
 
+void Board::reset()
+{
+  black_ = 0x0000000810000000;
+  white_ = 0x0000001008000000;
+  turn_ = 1;
+  record_ = "";
+  is_black_turn = 1;
+  is_white_turn = 0;
+  mobility_ = mobility();
+}
+
 string Board::to_ASCII_art()
 {
   string ascii = "  a b c d e f g h";
